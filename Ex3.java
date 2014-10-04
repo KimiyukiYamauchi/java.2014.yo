@@ -50,14 +50,35 @@ class Ex3_2 extends Ex{
 	}
 }
 
+class Ex3_4 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("整数a ：");
+		int a = stdIn.nextInt();
+		System.out.print("整数b ：");
+		int b = stdIn.nextInt();
+
+		if (a > b){
+			System.out.println("aのほうが大きいです。");
+		} else if (a < b){
+			System.out.println("bのほうが大きいです。");
+		} else {
+			System.out.println("aとbは同じ値です。");
+		}
+
+	}
+}
+
 public class Ex3 {
 	public static void main(String[] args){
 		Ex a;
 /*
 		a = new Ex3_0();
 		a = new Ex3_1();
-*/
 		a = new Ex3_2();
+*/
+		a = new Ex3_4();
 		a.execute();
 	}
 }
